@@ -1,0 +1,24 @@
+.infoBox {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1em;
+    background: var(--colors-bw-scale-90);
+    color: var(--colors-bw-scale-20);
+    border-radius: 4px;
+    font-family: var(--fonts-family);
+    padding: 0.5em;
+}
+
+.infoBox svg {
+    width: 20px;
+    height: 20px;
+}
+
+.infoBoxIcon {
+    font-family: var(--fonts-family);
+}
+
+.infoBoxText {
+    font-size: 0.8em;
+}

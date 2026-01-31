@@ -1,0 +1,398 @@
+*[data-theme='nature'] {
+    --fonts-family: 'Cinzel', sans-serif;
+    --fonts-family-headlines: 'Cinzel', sans-serif;
+    --fonts-default-weight: 400;
+    --fonts-family-quotes: Allura;
+    --colors-background: #fff;
+    --colors-primary: #B75751;
+    --colors-primary-dark: #670701;
+    --colors-primary-darker: #470701;
+    --colors-primary-light: #D77771;
+    --colors-primary-text: #fff;
+    --colors-secondary: #989E8B;
+    --colors-secondary-dark: #686E5B;
+    --colors-secondary-light: #B8BEAB;
+    --colors-secondary-light-background: #D8DECB;
+    --colors-bw-scale-100:#fff;
+    --colors-bw-scale-100t:#ffffffbb;
+    --colors-bw-scale-90:#f5f5f5;
+    --colors-bw-scale-80:#d5d5d5;
+    --colors-bw-scale-70:#b5b5b5;
+    --colors-bw-scale-60:#a5a5a5;
+    --colors-bw-scale-50:#989898;
+    --colors-bw-scale-40:#666666;
+    --colors-bw-scale-30:#464646;
+    --colors-bw-scale-30t:#464646AA;
+    --colors-bw-scale-20:#313131;
+    --colors-bw-scale-10:#212121;
+    --colors-bw-scale-0:#000;
+    --colors-bw-scale-0t:#000000AA;
+    --colors-blue: #0067CF;
+    --colors-red: #EF2211;
+    --colors-green: #009D00;
+    --colors-green-dark: #218321;
+    --colors-secondary-light-background-transparent:#D8DECBAA;
+    --colors-green-transparent:#218321AA;
+    --colors-red-transparent:#ff2b17AA;
+    --page-topbar-height: 3em;
+    --page-spaces-small: 5px;
+    --page-spaces-medium: 15px;
+    --page-spaces-large: 50px;
+    --page-ratio-widescreen: 0.4285;
+    --page-ratio-square: 1;
+    --forms-input-radius: 10px;
+}
+
+*[data-theme='pinklemonade'] {
+    --fonts-family: 'Open Sans', sans-serif;
+    --fonts-family-headlines: 'Caviar Dreams', sans-serif;
+    --fonts-default-weight: 200;
+    --fonts-family-quotes: Allura;
+    --colors-background: #DBE9F2;
+    --colors-primary: #DCA1A1;
+    --colors-primary-dark: #99606D;
+    --colors-primary-darker: #662C38;
+    --colors-primary-light: #ECB1B1;
+    --colors-primary-text: #313131;
+    --colors-secondary: #7397B1;
+    --colors-secondary-dark: #557C99;
+    --colors-secondary-light: #85A4BB;
+    --colors-secondary-light-background: #CBD9E2;
+    --colors-bw-scale-100:#fff;
+    --colors-bw-scale-100t:#ffffffbb;
+    --colors-bw-scale-90:#f5f5f5;
+    --colors-bw-scale-80:#d5d5d5;
+    --colors-bw-scale-70:#b5b5b5;
+    --colors-bw-scale-60:#a5a5a5;
+    --colors-bw-scale-50:#989898;
+    --colors-bw-scale-40:#666666;
+    --colors-bw-scale-30:#464646;
+    --colors-bw-scale-30t:#464646AA;
+    --colors-bw-scale-20:#313131;
+    --colors-bw-scale-10:#212121;
+    --colors-bw-scale-0:#000;
+    --colors-bw-scale-0t:#000000AA;
+    --colors-blue: #0067CF;
+    --colors-red: #EF2211;
+    --colors-green: #009D00;
+    --colors-green-dark: #218321;
+    --colors-secondary-light-background-transparent:#CBD9E2AA;
+    --colors-green-transparent:#218321AA;
+    --colors-red-transparent:#ff2b17AA;
+    --page-topbar-height: 3em;
+    --page-spaces-small: 5px;
+    --page-spaces-medium: 15px;
+    --page-spaces-large: 50px;
+    --page-ratio-widescreen: 0.4285;
+    --page-ratio-square: 1;
+    --forms-input-radius: 10px;
+}
+
+*[data-theme='nazgul'] {
+    --fonts-family: 'Open Sans', sans-serif;
+    --fonts-family-headlines: 'Caviar Dreams', sans-serif;
+    --fonts-default-weight: 200;
+    --fonts-family-quotes: Allura;
+    --colors-background: #313131;
+    --colors-primary: #EFEFEF;
+    --colors-primary-dark: #DFDFDF;
+    --colors-primary-darker: #CFCFCF;
+    --colors-primary-light: #FFFFFF;
+    --colors-primary-text: #313131;
+    --colors-secondary: #BFBFBF;
+    --colors-secondary-dark: #AFAFAF;
+    --colors-secondary-light: #CFCFCF;
+    --colors-secondary-light-background: #C0C0C0;
+    --colors-bw-scale-100:#000;
+    --colors-bw-scale-100t:#000000AA;
+    --colors-bw-scale-90:#212121;
+    --colors-bw-scale-80:#313131;
+    --colors-bw-scale-70:#464646;
+    --colors-bw-scale-60:#666666;
+    --colors-bw-scale-50:#989898;
+    --colors-bw-scale-40:#a5a5a5;
+    --colors-bw-scale-30:#b5b5b5;
+    --colors-bw-scale-30t:#d5d5d5aa;
+    --colors-bw-scale-20:#d5d5d5;
+    --colors-bw-scale-10:#f5f5f5;
+    --colors-bw-scale-0:#fff;
+    --colors-bw-scale-0t:#ffffffbb;
+    --colors-blue: #0067CF;
+    --colors-red: #EF2211;
+    --colors-green: #009D00;
+    --colors-green-dark: #218321;
+    --colors-secondary-light-background-transparent:#CBD9E2AA;
+    --colors-green-transparent:#218321AA;
+    --colors-red-transparent:#ff2b17AA;
+    --page-topbar-height: 3em;
+    --page-spaces-small: 5px;
+    --page-spaces-medium: 15px;
+    --page-spaces-large: 50px;
+    --page-ratio-widescreen: 0.4285;
+    --page-ratio-square: 1;
+    --forms-input-radius: 10px;
+}
+
+body {
+    background-color: var(--colors-background);
+}
+
+:global(.margin-bottom-small) {
+    margin-bottom: var(--page-spaces-small);
+}
+
+:global(.margin-top-small) {
+    margin-top: var(--page-spaces-small);
+}
+
+:global(.margin-left-small) {
+    margin-left: var(--page-spaces-small);
+}
+
+:global(.margin-right-small) {
+    margin-right: var(--page-spaces-small);
+}
+
+:global(.margin-bottom-medium) {
+    margin-bottom: var(--page-spaces-medium);
+}
+
+:global(.margin-top-medium) {
+    margin-top: var(--page-spaces-medium);
+}
+
+:global(.margin-left-medium) {
+    margin-left: var(--page-spaces-medium);
+}
+
+:global(.margin-right-medium) {
+    margin-right: var(--page-spaces-medium);
+}
+
+:global(.margin-bottom-large) {
+    margin-bottom: var(--page-spaces-large);
+}
+
+:global(.margin-top-large) {
+    margin-top: var(--page-spaces-large);
+}
+
+:global(.margin-left-large) {
+    margin-left: var(--page-spaces-large);
+}
+
+:global(.margin-right-large) {
+    margin-right: var(--page-spaces-large);
+}
+
+:global(.padding-bottom-small) {
+    padding-bottom: var(--page-spaces-small);
+}
+
+:global(.padding-top-small) {
+    padding-top: var(--page-spaces-small);
+}
+
+:global(.padding-left-small) {
+    padding-left: var(--page-spaces-small);
+}
+
+:global(.padding-right-small) {
+    padding-right: var(--page-spaces-small);
+}
+
+:global(.padding-bottom-medium) {
+    padding-bottom: var(--page-spaces-medium);
+}
+
+:global(.padding-top-medium) {
+    padding-top: var(--page-spaces-medium);
+}
+
+:global(.padding-left-medium) {
+    padding-left: var(--page-spaces-medium);
+}
+
+:global(.padding-right-medium) {
+    padding-right: var(--page-spaces-medium);
+}
+
+:global(.padding-bottom-large) {
+    padding-bottom: var(--page-spaces-large);
+}
+
+:global(.padding-top-large) {
+    padding-top: var(--page-spaces-large);
+}
+
+:global(.padding-left-large) {
+    padding-left: var(--page-spaces-large);
+}
+
+:global(.padding-right-large) {
+    padding-right: var(--page-spaces-large);
+}
+
+:global(.color-primary), :global(.color-primary) * {
+    color: var(--colors-primary);
+}
+:global(.color-primary-text), :global(.color-primary-text) * {
+    color: var(--colors-primary-text);
+}
+:global(.color-primary-dark), :global(.color-primary-dark) * {
+    color: var(--colors-primary-dark);
+}
+:global(.color-primary-darker), :global(.color-primary-darker) * {
+    color: var(--colors-primary-darker);
+}
+:global(.color-primary-light), :global(.color-primary-light) * {
+    color: var(--colors-primary-light);
+}
+:global(.color-secondary), :global(.color-secondary) * {
+    color: var(--colors-secondary);
+}
+:global(.color-secondary-dark), :global(.color-secondary-dark) * {
+    color: var(--colors-secondary-dark);
+}
+:global(.color-secondary-light), :global(.color-secondary-light) * {
+    color: var(--colors-secondary-light);
+}
+:global(.color-secondary-light-background), :global(.color-secondary-light-background) * {
+    color: var(--colors-secondary-light-background);
+}
+:global(.color-white), :global(.color-white) * {
+    color: var(--colors-bw-scale-100);
+}
+:global(.color-black), :global(.color-black) * {
+    color: var(--colors-bw-scale-0);
+}
+:global(.color-black-transparent), :global(.color-black-transparent) * {
+    color: var(--colors-bw-scale-0t);
+}
+:global(.color-blue), :global(.color-blue) * {
+    color: var(--colors-blue);
+}
+:global(.color-red), :global(.color-red) * {
+    color: var(--colors-red);
+}
+:global(.color-green), :global(.color-green) * {
+    color: var(--colors-green);
+}
+:global(.color-green-dark), :global(.color-green-dark) * {
+    color: var(--colors-green-dark);
+}
+:global(.color-background), :global(.color-background) * {
+    color: var(--colors-background);
+}
+:global(.color-grey), :global(.color-grey) * {
+    color: var(--colors-bw-scale-50);
+}
+:global(.color-grey-dark), :global(.color-grey-dark) * {
+    color: var(--colors-bw-scale-30);
+}
+:global(.color-grey-darkest), :global(.color-grey-darkest) * {
+    color: var(--colors-bw-scale-10);
+}
+:global(.color-grey-light), :global(.color-grey-light) * {
+    color: var(--colors-bw-scale-70);
+}
+:global(.color-grey-lighter), :global(.color-grey-lighter) * {
+    color: var(--colors-bw-scale-80);
+}
+:global(.color-grey-lightest), :global(.color-grey-lightest) * {
+    color: var(--colors-bw-scale-90);
+}
+:global(.color-grey-transparent), :global(.color-grey-transparent) * {
+    color: var(--colors-bw-scale-30t);
+}
+:global(.color-secondary-light-background-transparent), :global(.color-secondary-light-background-transparent) * {
+    color: var(--colors-secondary-light-background-transparent);
+}
+:global(.color-green-transparent), :global(.color-green-transparent) * {
+    color: var(--colors-green-transparent);
+}
+:global(.color-red-transparent), :global(.color-red-transparent) * {
+    color: var(--colors-red-transparent);
+}
+
+:global(.hover-primary:hover), :global(.hover-primary:hover) * {
+    color: var(--colors-primary);
+}
+:global(.hover-primary-text:hover), :global(.hover-primary-text:hover) * {
+    color: var(--colors-primary-text);
+}
+:global(.hover-primary-dark:hover), :global(.hover-primary-dark:hover) * {
+    color: var(--colors-primary-dark);
+}
+:global(.hover-primary-darker:hover), :global(.hover-primary-darker:hover) * {
+    color: var(--colors-primary-darker);
+}
+:global(.hover-primary-light:hover), :global(.hover-primary-light:hover) * {
+    color: var(--colors-primary-light);
+}
+:global(.hover-secondary:hover), :global(.hover-secondary:hover) * {
+    color: var(--colors-secondary);
+}
+:global(.hover-secondary-dark:hover), :global(.hover-secondary-dark:hover) * {
+    color: var(--colors-secondary-dark);
+}
+:global(.hover-secondary-light:hover), :global(.hover-secondary-light:hover) * {
+    color: var(--colors-secondary-light);
+}
+:global(.hover-secondary-light-background:hover), :global(.hover-secondary-light-background:hover) * {
+    color: var(--colors-secondary-light-background);
+}
+:global(.hover-white:hover), :global(.hover-white:hover) * {
+    color: var(--colors-bw-scale-100);
+}
+:global(.hover-black:hover), :global(.hover-black:hover) * {
+    color: var(--colors-bw-scale-0);
+}
+:global(.hover-black-transparent:hover), :global(.hover-black-transparent:hover) * {
+    color: var(--colors-bw-scale-0t);
+}
+:global(.hover-blue:hover), :global(.hover-blue:hover) * {
+    color: var(--colors-blue);
+}
+:global(.hover-red:hover), :global(.hover-red:hover) * {
+    color: var(--colors-red);
+}
+:global(.hover-green:hover), :global(.hover-green:hover) * {
+    color: var(--colors-green);
+}
+:global(.hover-green-dark:hover), :global(.hover-green-dark:hover) * {
+    color: var(--colors-green-dark);
+}
+:global(.hover-background:hover), :global(.hover-background:hover) * {
+    color: var(--colors-background);
+}
+:global(.hover-grey:hover), :global(.hover-grey:hover) * {
+    color: var(--colors-bw-scale-50);
+}
+:global(.hover-grey-dark:hover), :global(.hover-grey-dark:hover) * {
+    color: var(--colors-bw-scale-30);
+}
+:global(.hover-grey-darkest:hover), :global(.hover-grey-darkest:hover) * {
+    color: var(--colors-bw-scale-10);
+}
+:global(.hover-grey-light:hover), :global(.hover-grey-light:hover) * {
+    color: var(--colors-bw-scale-70);
+}
+:global(.hover-grey-lighter:hover), :global(.hover-grey-lighter:hover) * {
+    color: var(--colors-bw-scale-80);
+}
+:global(.hover-grey-lightest:hover), :global(.hover-grey-lightest:hover) * {
+    color: var(--colors-bw-scale-90);
+}
+:global(.hover-grey-transparent:hover), :global(.hover-grey-transparent:hover) * {
+    color: var(--colors-bw-scale-30t);
+}
+:global(.hover-secondary-light-background-transparent:hover), :global(.hover-secondary-light-background-transparent:hover) * {
+    color: var(--colors-secondary-light-background-transparent);
+}
+:global(.hover-green-transparent:hover), :global(.hover-green-transparent:hover) * {
+    color: var(--colors-green-transparent);
+}
+:global(.hover-red-transparent:hover), :global(.hover-red-transparent:hover) * {
+    color: var(--colors-red-transparent);
+}

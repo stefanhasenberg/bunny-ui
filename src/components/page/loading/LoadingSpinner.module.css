@@ -1,0 +1,67 @@
+.loadingSpinner {
+    border-radius: 50%;
+    width: 5em;
+    height: 5em;
+    margin: 1em auto;
+    padding: 0.5em;
+    background-color: var(--colors-bw-scale-100);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow:
+        0 0 60px 30px var(--colors-bw-scale-100),
+        0 0 5px 5px var(--colors-primary),
+        0 0 5px 5px var(--colors-primary-light);
+    animation: pulsate 3s infinite;
+}
+
+.loadingSpinnerWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    align-items: center;
+    justify-content: center;
+}
+
+.loadingSpinner div {
+    width: 4em;
+    height: 4em;
+    margin: 0 auto;
+    padding: 0.5em;
+}
+
+@keyframes pulsate
+{
+    0% {box-shadow:
+        0 0 60px 30px var(--colors-bw-scale-100),
+        0 0 5px 5px var(--colors-primary),
+        0 0 5px 5px var(--colors-primary-light);}
+    50% {box-shadow:
+        0 0 60px 30px var(--colors-bw-scale-100),
+        0 0 10px 10px var(--colors-primary),
+        0 0 10px 10px var(--colors-primary-light);}
+    100% {box-shadow:
+        0 0 60px 30px var(--colors-bw-scale-100),
+        0 0 5px 5px var(--colors-primary),
+        0 0 5px 5px var(--colors-primary-light);}
+}
+
+.progressBar {
+    border-bottom: 1px solid var(--colors-primary);
+    width: 50%;
+    margin: 0 auto;
+}
+
+.progressBarProgress {
+    height: 1px;
+    background: var(--colors-primary);
+}
+
+.loadingSpinnerText {
+    text-align: center;
+}
+
+.loadingSpinnerText p {
+    text-align: center;
+    color:var(--colors-bw-scale-50);
+}

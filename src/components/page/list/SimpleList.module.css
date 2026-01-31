@@ -1,0 +1,13 @@
+.listSimple {
+    padding:0;
+    margin:0;
+}
+
+.listSimpleItem {
+    list-style: none;
+    color: var(--colors-bw-scale-20);
+}
+
+.listSimpleItem.inline {
+    display: inline-block;
+}

@@ -1,0 +1,117 @@
+@use '../../../themes/vars.scss' as *;
+
+.tile {
+    border-radius: 6px;
+}
+
+.tileHead {
+    border-radius: 6px;
+    display: grid;
+    box-shadow: 0 0px 5px var(--colors-bw-scale-70);
+}
+
+.tileHead.headOpen {
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+@media(max-width:$breakpoint1) {
+    .tileHead {
+        grid-template-columns: 1fr;
+    }
+
+    .tileHeadInfo {
+        grid-template-columns: 5em 1fr;
+    }
+
+    .tileHeadEditable {
+        grid-template-columns: 1fr 3em;
+    }
+
+    .tileHeadInfoEditable {
+        grid-template-columns: 5em 1fr 3em;
+    }
+}
+
+@media(min-width: $breakpoint1) and (max-width:$breakpoint2) {
+    .tileHead {
+        grid-template-columns: 1fr;
+    }
+
+    .tileHeadInfo {
+        grid-template-columns: 5em 1fr;
+    }
+
+    .tileHeadEditable {
+        grid-template-columns: 1fr 3em;
+    }
+
+    .tileHeadInfoEditable {
+        grid-template-columns: 5em 1fr 3em;
+    }
+}
+
+@media(min-width: $breakpoint2) {
+    .tileHead {
+        grid-template-columns: 1fr;
+    }
+
+    .tileHeadInfo {
+        grid-template-columns: 5em 1fr;
+    }
+
+    .tileHeadEditable {
+        grid-template-columns: 1fr 3em;
+    }
+
+    .tileHeadInfoEditable {
+        grid-template-columns: 5em 1fr 3em;
+    }
+}
+
+.tileHeadInfo {
+    background: linear-gradient(to left, var(--colors-secondary-light-background), var(--colors-bw-scale-100));
+}
+
+.tileHeadMain {
+    background: var(--colors-secondary-light-background);
+}
+
+.tileHeadToolbox {
+    background: var(--colors-secondary-light-background);
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    align-items: center;
+}
+
+.tileHeadToolbox svg {
+    width: 2em;
+    height: 2em;
+}
+
+.tileContent.contentOpen {
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    background: var(--colors-bw-scale-100);
+    box-shadow: 0 0px 10px var(--colors-bw-scale-50);
+}
+
+.tileContentToggle {
+    text-align: center;
+    cursor: pointer;
+}
+
+.tileContentToggle div {
+    margin: 0 auto;
+}
+
+.tileContentToggle svg {
+    width: 2em;
+    height: 2em;
+}
+
+.tileContentInner {
+    padding: 1em;
+}

@@ -1,0 +1,42 @@
+.inputRange {
+    min-width: 150px;
+    width:100%;
+    background-color: var(--colors-primary);
+    margin-top:1em;
+    margin-bottom:1em;
+    -webkit-appearance: none;
+    height: 2px;
+    border-radius: 1px;
+}
+
+.inputRange::-webkit-slider-thumb,
+.inputRange::-moz-range-thumb,
+.inputRange::-ms-thumb,
+.inputRange::-webkit-slider-runnable-track,
+.inputRange::-moz-range-track,
+.inputRange::-ms-track {
+    color: var(--colors-primary);
+}
+
+.inputRange::-webkit-slider-runnable-track,
+.inputRange::-moz-range-track,
+.inputRange::-ms-track {
+    height: 2px;
+    border-radius: 1px;
+}
+
+.inputRangeLabel {
+    font-family: var(--fonts-family);
+    font-weight: 100;
+    font-size: 0.8em;
+    text-align: left;
+    color: var(--colors-bw-scale-30);
+}
+
+.inputRangeIndicator {
+    font-family: var(--fonts-family);
+    font-weight: 100;
+    font-size: 0.8em;
+    text-align: right;
+    color: var(--colors-primary);
+}

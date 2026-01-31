@@ -1,0 +1,29 @@
+@use '../../../themes/vars.scss' as *;
+
+.section {
+    margin: 0 auto;
+    max-width: $breakpoint3;
+    color: var(--colors-bw-scale-0);
+}
+
+.section.secondary {
+    background-color: var(--colors-secondary);
+}
+
+.section.primary {
+    background-color: var(--colors-primary);
+}
+
+.section.white {
+    color: var(--colors-bw-scale-100);
+}
+
+.section.breakpoint1 {
+    max-width: $breakpoint1;
+}
+.section.breakpoint2 {
+    max-width: $breakpoint2;
+}
+.section.breakpoint3 {
+    max-width: $breakpoint3;
+}

@@ -1,0 +1,67 @@
+.checkboxInput {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkboxLabel {
+    font-family: var(--fonts-family);
+    color: var(--colors-bw-scale-20);
+    display: block;
+    position: relative;
+    padding-top: 0.1em;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 1em;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.checkboxError {
+    font-family: var(--fonts-family);
+    font-weight: 100;
+    font-size: 0.8em;
+    text-align: right;
+    color: var(--colors-red);
+}
+
+.checkboxMark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    border-radius: 4px;
+    box-shadow: inset 0px 0px 3px 4px #00000022;
+    -webkit-box-shadow: inset 0px 0px 3px 4px #00000022;
+    -moz-box-shadow: inset 0px 0px 3px 4px #00000022;
+    background-color: var(--colors-secondary-light);
+}
+
+.checkboxMark:hover {
+    background-color: var(--colors-secondary);
+}
+
+.checkboxMark.checked {
+    background-color: var(--colors-secondary);
+}
+
+.checkboxMark.checked::after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    content: "";
+    position: absolute;
+    display: block;
+}

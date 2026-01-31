@@ -1,0 +1,18 @@
+name: Publish library
+on:
+  push:
+    branches: 
+    - release
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with: 
+          always-auth: true
+          node-version: '19.3.0'
+          registry-url: 'https://registry.npmjs.org'
+          scope: '@stefanhasenberg'
+      - run: yarn
+      - run: yarn run build

@@ -1,0 +1,39 @@
+@use '../../../themes/vars.scss' as *;
+
+@media only screen and (max-width: $breakpoint1) {
+    .navigation {
+        display: block; 
+        visibility: visible;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        display: table;
+        z-index: 9999;
+    }
+
+    .navigation.hide {
+        display: none;
+        visibility: none;
+    }
+
+    .navigationList {
+        display: table-cell;
+        vertical-align: middle;
+        margin: 0 auto;
+        padding: 0;
+        background-color: #ffffffee;
+    }
+}
+
+@media only screen and (min-width: $breakpoint1) {
+    .navigation {
+        display: block; visibility: visible;
+    }
+
+    .navigationList {
+        color: var(--colors-primary);
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+}

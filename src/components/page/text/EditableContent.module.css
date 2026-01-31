@@ -1,0 +1,33 @@
+.editable {
+    font-family: var(--fonts-family);
+}
+
+.editableTitle {
+    font-weight: 600;
+    color: var(--colors-bw-scale-50);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.editableTitleIcon {
+    margin-left: var(--page-spaces-small);
+    cursor: pointer;
+}
+
+.editableTitle svg {
+    width: 1em;
+    height: 1em;
+    cursor: pointer;
+}
+
+.editableContent {
+    margin-inline-start: 40px;
+    margin-top: 0.5em;
+}
+
+.editableCntent svg {
+    width: 1em;
+    height: 1em;
+    cursor: pointer;
+}

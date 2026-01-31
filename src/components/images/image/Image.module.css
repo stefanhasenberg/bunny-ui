@@ -1,0 +1,28 @@
+.imageContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    background: var(--colors-bw-scale-90);
+}
+
+.image {
+    background: var(--colors-bw-scale-90);
+    overflow: hidden;
+}
+
+.image.widescreen {
+    aspect-ratio: 1 / var(--page-ratio-widescreen);
+}
+
+.image.square {
+    aspect-ratio: 1 / var(--page-ratio-square);
+}
+
+.imagePicture {
+    width: 100%;
+    background: var(--colors-bw-scale-90);
+}
+
+.imageImg {
+    width: 100%;
+    background: var(--colors-bw-scale-90);
+}

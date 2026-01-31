@@ -1,0 +1,17 @@
+.buttonRow {
+    display: flex;
+    align-items: center;
+    gap: var(--page-spaces-medium)
+}
+
+.justify-left {
+    justify-content: left;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-right {
+    justify-content: right;
+}

@@ -1,0 +1,17 @@
+.addable {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.addableContent {
+    flex-shrink: 0;
+    flex-grow: 1;
+    
+}
+
+.addableAction {
+    padding: 8px;
+    cursor: pointer;
+}

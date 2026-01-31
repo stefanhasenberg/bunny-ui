@@ -1,0 +1,20 @@
+.buttonImage {
+    font-family: var(--fonts-family);
+    font-weight: 400;
+    color: var(--colors-primary);
+    padding:1em;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.buttonImage:hover:not([disabled]) {
+    color: var(--colors-primary);
+    background-color: var(--colors-bw-scale-90);
+}
+    
+.buttonImage[disabled] {
+    color: var(--colors-bw-scale-70);
+    cursor: default;
+}

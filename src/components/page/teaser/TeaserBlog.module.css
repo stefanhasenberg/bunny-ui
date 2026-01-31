@@ -1,0 +1,25 @@
+.teaserBlogImage {
+    border-top-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    overflow: hidden;
+}
+
+.teaserLinkBlog {
+    display: block;
+    border-radius: 8px;
+    cursor: pointer;
+    background: var(--colors-bw-scale-100t);
+    box-shadow: 0 0 5px var(--colors-bw-scale-50);
+    text-decoration: none;
+    color: var(--colors-bw-scale-30);
+}
+
+.teaserLinkBlog:hover {
+    text-decoration: none;
+    color: var(--colors-primary);
+    box-shadow: 0 0 10px var(--colors-bw-scale-50);
+}
+
+.teaserLinkBlog:hover p, .teaserLinkBlog:hover h1, .teaserLinkBlog:hover h2, .teaserLinkBlog:hover h3, .teaserLinkBlog:hover h4, .teaserLinkBlog:hover h5, .teaserLinkBlog:hover h6, .teaserLinkBlog:hover div, .teaserLinkBlog:hover span {
+    color: var(--colors-primary)
+}

@@ -1,0 +1,14 @@
+.collectionTimeline {
+    background-image: linear-gradient(var(--colors-bw-scale-50), var(--colors-bw-scale-50));
+    background-size: 1px 100%;
+    background-repeat: no-repeat;
+    background-position: 20% center;
+}
+
+.collectionWrapper {
+    overflow: auto;
+}
+
+.collectionWrapper.borderRadius {
+    border-radius: var(--page-border-radius);
+}

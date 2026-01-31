@@ -1,0 +1,30 @@
+
+.toast {
+    width: 100%;
+    max-width: 300px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    background-color: var(--colors-bw-scale-0t);
+    color: var(--colors-bw-scale-100);
+    z-index: 9999;
+    animation: showtoast 8000ms ease-out forwards;
+    animation-iteration-count: 1;
+}
+
+.toast.success {
+    background-color: var(--colors-green-transparent);
+}
+
+.toast.warning {
+    background-color: var(--colors-red-transparent);
+}
+
+@keyframes showtoast
+{
+    0%,100% { opacity: 0 }
+    50% { opacity: 1 }
+}
+
+.toastContent {
+    font-family: var(--fonts-family);
+}

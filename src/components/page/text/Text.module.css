@@ -1,0 +1,93 @@
+p {
+    font-family: var(--fonts-family);
+    margin: 0;
+    padding: 0;
+    font-weight: var(--fonts-default-weight);
+}
+
+p.quote {
+    font-family: var(--fonts-family-quotes);
+    font-size: 1.3em;
+}
+
+p.small {
+    font-family: var(--fonts-family);
+    margin: 0;
+    padding: 0;
+    font-weight: var(--fonts-default-weight);
+    font-size:0.8em;
+}
+
+b {
+    font-family: var(--fonts-family);
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
+}
+
+h1 {
+    font-family: var(--fonts-family-headlines);
+    font-size: 2.5em;
+    margin: 0;
+    padding: 0;
+    font-weight: var(--fonts-default-weight);
+}
+
+h2 {
+    font-family: var(--fonts-family-headlines);
+    font-size: 2.0em;
+    margin: 0;
+    padding: 0;
+    font-weight: var(--fonts-default-weight);
+    color: var(--colors-primary);
+}
+
+h3 {
+    font-family: var(--fonts-family-headlines);
+    font-size: 1.5em;
+    margin: 0;
+    padding: 0;
+    font-weight: var(--fonts-default-weight);
+    color: var(--colors-bw-scale-30);
+}
+
+h4 {
+    font-family: var(--fonts-family-headlines);
+    font-size: 1.2em;
+    margin: 0;
+    padding: 0;
+    font-weight: var(--fonts-default-weight);
+}
+
+h5 {
+    font-family: var(--fonts-family-headlines);
+    font-size: 1.2em;
+    margin: 0;
+    padding: 0;
+    font-weight: var(--fonts-default-weight);
+}
+
+h6 {
+    font-family: var(--fonts-family);
+    font-size: 1.2em;
+    margin: 0;
+    padding: 0;
+    font-weight: var(--fonts-default-weight);
+}
+
+span {
+    font-family: var(--fonts-family);
+    margin: 0;
+    padding: 0;
+    font-weight: var(--fonts-default-weight);
+}
+
+a {
+    font-family: var(--fonts-family);
+    text-decoration: none;
+    font-weight: var(--fonts-default-weight);
+}
+
+a:hover {
+    text-decoration: underline;
+}

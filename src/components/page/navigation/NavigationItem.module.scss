@@ -1,0 +1,56 @@
+@use '../../../themes/vars.scss' as *;
+
+@media only screen and (max-width: $breakpoint1) {
+    .navigationListItem {
+        list-style: none;
+        margin: 0;
+        color: var(--colors-primary);
+        text-align: center;
+        padding: 1em 0;
+    }
+
+    .navigationListItem a {
+        font-family: var(--fonts-family);
+        cursor: pointer;
+        text-decoration: none;
+        color: var(--colors-primary);
+        font-size: 1em;
+    }
+
+    .navigationListItem a.active {
+        color: var(--colors-primary-light);
+    }
+}
+
+@media only screen and (min-width: $breakpoint1) {
+    .navigationListItem {
+        display: inline-block;
+        list-style: none;
+        margin: 0;
+        padding: 1em 2em 3em 2em;
+    }
+
+    .navigationListItem a {
+        font-family: var(--fonts-family);
+        text-decoration: none;
+        color: var(--colors-primary);
+        cursor: pointer;
+    }
+
+    .navigationListItem a.active {
+        color: var(--colors-primary-light);
+    }
+
+    .navigationListItem a :active {
+        color: var(--colors-primary-light);
+    }
+
+    .navigationListItem a :hover {
+        color: var(--colors-primary-light);
+    }
+
+    .navigationListItem span {
+        margin: 0 auto;
+        font-family: var(--fonts-family);
+    }
+}

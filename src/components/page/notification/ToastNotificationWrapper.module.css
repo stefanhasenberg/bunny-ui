@@ -1,0 +1,9 @@
+.toastNotificationWrapper {
+    position: fixed;
+    top: var(--page-topbar-height);
+    left: 0;
+    width: 100%;
+    max-width: 300px;
+    height: 0px;
+    overflow: visible;
+}

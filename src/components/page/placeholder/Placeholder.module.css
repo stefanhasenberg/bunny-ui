@@ -1,0 +1,13 @@
+.placeholder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.placeholer.roundedBorder {
+    border-radius: 4px;
+}
+
+.placeholder.empty {
+    background-color: var(--colors-bw-scale-90);
+}
