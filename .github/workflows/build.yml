@@ -1,8 +1,10 @@
-name: Publish library
+name: Build branch
 on:
   push:
     branches: 
     - release
+    - develop
+    - feature/*
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -11,7 +13,7 @@ jobs:
       - uses: actions/setup-node@v3
         with: 
           always-auth: true
-          node-version: '19.3.0'
+          node-version: '24.11.1'
           registry-url: 'https://registry.npmjs.org'
           scope: '@stefanhasenberg'
       - run: yarn
