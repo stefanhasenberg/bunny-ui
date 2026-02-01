@@ -18,6 +18,8 @@ jobs:
           registry-url: 'https://registry.npmjs.org'
           scope: '@stefanhasenberg'
       - run: yarn
+      - run: git config --global user.email "stefan.hasenberg@vodafonemail.de"
+      - run: git config --global user.name "Stefan Hasenberg"
       - run: yarn version --new-version $VERSION
         env:
           VERSION: ${{inputs.version}}
