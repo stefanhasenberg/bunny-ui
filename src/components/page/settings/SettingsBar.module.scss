@@ -8,12 +8,13 @@
     top: 0;
     left: 0;
     width: 100%;
-    background-color: var(--colors-bw-scale-100);
-    z-index: 9998;
+    background-color: var(--colors-background-header);
+    z-index: 9999;
+    height: var(--page-topbar-height);
 }
 
 .settingsBarItem {
-    color: var(--colors-bw-scale-70);
+    color: var(--colors-header);
     margin: 0;
     list-style: none;
     display: inline-block;
@@ -37,11 +38,12 @@
     right: 0px;
     background-color: var(--colors-secondary-light-background-transparent);
     border-bottom-left-radius: 6px;
-    z-index: 9999;
+    z-index: 9998;
     max-width: 400px;
     width: 100%;
     animation: showsettings 0.3s ease-out forwards;
     animation-iteration-count: 1;
+    font-family: var(--fonts-family);
 }
 
 
@@ -58,12 +60,12 @@
 
 @keyframes hidesettings
 {
-    from {top:3em; opacity: 1;}
+    from {top: var(--page-topbar-height); opacity: 1;}
     to {top:0em; opacity: 0;visibility: hidden;}
 }
 
 @keyframes showsettings
 {
     from {top:0em; opacity: 0;visibility: hidden;}
-    to {top:3em; opacity: 1;}
+    to {top:var(--page-topbar-height); opacity: 1;}
 }
