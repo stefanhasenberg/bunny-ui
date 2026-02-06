@@ -23,4 +23,9 @@ jobs:
       - run: yarn version --new-version $VERSION
         env:
           VERSION: ${{inputs.version}}
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GIT_PUSH_TOKEN }}
+          branch: release
 
