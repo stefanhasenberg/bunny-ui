@@ -34,7 +34,10 @@
     --colors-secondary-light-background-transparent:#D8DECBAA;
     --colors-green-transparent:#218321AA;
     --colors-red-transparent:#ff2b17AA;
-    --page-topbar-height: 3em;
+    --colors-background-header:#fff;
+    --colors-header:#515151;
+    --colors-hover-header:#616161;
+    --page-topbar-height: 3.5em;
     --page-spaces-small: 5px;
     --page-spaces-medium: 15px;
     --page-spaces-large: 50px;
@@ -76,10 +79,13 @@
     --colors-red: #EF2211;
     --colors-green: #009D00;
     --colors-green-dark: #218321;
-    --colors-secondary-light-background-transparent:#CBD9E2AA;
+    --colors-secondary-light-background-transparent:#ECB1B188;
     --colors-green-transparent:#218321AA;
     --colors-red-transparent:#ff2b17AA;
-    --page-topbar-height: 3em;
+    --colors-background-header:#99606D;
+    --colors-header:#fff;
+    --colors-hover-header:#f0f0f0;
+    --page-topbar-height: 3.5em;
     --page-spaces-small: 5px;
     --page-spaces-medium: 15px;
     --page-spaces-large: 50px;
@@ -121,10 +127,13 @@
     --colors-red: #EF2211;
     --colors-green: #009D00;
     --colors-green-dark: #218321;
-    --colors-secondary-light-background-transparent:#CBD9E2AA;
+    --colors-secondary-light-background-transparent:#E0E0E0AA;
     --colors-green-transparent:#218321AA;
     --colors-red-transparent:#ff2b17AA;
-    --page-topbar-height: 3em;
+    --colors-background-header:#212121;
+    --colors-header:#f0f0f0;
+    --colors-hover-header:#e0e0e0;
+    --page-topbar-height: 3.5em;
     --page-spaces-small: 5px;
     --page-spaces-medium: 15px;
     --page-spaces-large: 50px;
@@ -314,6 +323,9 @@ body {
 :global(.color-red-transparent), :global(.color-red-transparent) * {
     color: var(--colors-red-transparent);
 }
+:global(.color-header), :global(.color-header) * {
+    color: var(--colors-header);
+}
 
 :global(.hover-primary:hover), :global(.hover-primary:hover) * {
     color: var(--colors-primary);
@@ -395,4 +407,7 @@ body {
 }
 :global(.hover-red-transparent:hover), :global(.hover-red-transparent:hover) * {
     color: var(--colors-red-transparent);
+}
+:global(.hover-header:hover), :global(.hover-header:hover) * {
+    color: var(--colors-hover-header);
 }

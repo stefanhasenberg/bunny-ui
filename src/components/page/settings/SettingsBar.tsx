@@ -20,9 +20,12 @@ const SettingsBar : React.FC<SettingsBarProps> = ({settings, toggleMenu, items, 
     return <>
         <ul className={styles.settingsBar} data-testid="settings-bar-container">
             {children}
-            {items && items.map(item => <li {...item} className={`${styles.settingsBarItem} ${item.hideOnMobile ? 'hide-on-mobile' : ''}`}>{item.svg && <Svg {...item.svg} />} {item.children}</li>) }
-            {settings && <li className={styles.settingsBarItem} onClick={onClickSettings}>{<Svg {...{svgRef: 'settings', colorRef: { default: 'grey-light', hover: 'primary-light' }}} />}</li>}
-            <li className={`${styles.settingsBarItem} hide-on-mobile`} onClick={onClickMenu}>{ <Svg {...{svgRef: 'menu', colorRef: { default: 'primary', hover: 'primary-light' }}} />}</li>
+            {items && items.map(item => <li {...item} className={`${styles.settingsBarItem} ${item.hideOnMobile ? 'hide-on-mobile' : ''}`}>{item.svg && <Svg {...{
+                ...item.svg,
+                colorRef: { default: 'header', hover: 'header' }
+            }} />} {item.children}</li>) }
+            {settings && <li className={styles.settingsBarItem} onClick={onClickSettings}>{<Svg {...{svgRef: 'settings', colorRef: { default: 'header', hover: 'header' }}} />}</li>}
+            <li className={`${styles.settingsBarItem} hide-on-mobile`} onClick={onClickMenu}>{ <Svg {...{svgRef: 'menu', colorRef: { default: 'header', hover: 'header' }}} />}</li>
         </ul>
         {<div className={`${styles.settings} ${(!settingsOpen ? styles.aHideSettings : '')} ${(!settingsOpenFirstTime ? styles.aSettingsHidden : '')}`}>{settings}</div>}
     </>
