@@ -24,7 +24,10 @@ export interface ColorStates {
         "grey-transparent" | 
         "secondary-light-background-transparent" | 
         "green-transparent" | 
-        "red-transparent"),
+        "red-transparent" |
+        "header" |
+        "background-header" |
+        "header-hover"),
     hover?: ("primary" | 
         "primary-dark" | 
         "primary-darker" | 
@@ -49,5 +52,8 @@ export interface ColorStates {
         "grey-transparent" | 
         "secondary-light-background-transparent" | 
         "green-transparent" | 
-        "red-transparent")
+        "red-transparent" |
+        "header" |
+        "background-header" |
+        "header-hover")
 }
