@@ -19,8 +19,7 @@ export const SettingsBarDefault : Story = {
     settings: <><div>Some Settings</div></>,
     items: [{
       svg: {
-        svgRef: 'profile',
-        colorRef: { default: 'grey-light', hover: 'primary-light' }
+        svgRef: 'profile'
       },
       label: 'Login',
       onClick: () => {

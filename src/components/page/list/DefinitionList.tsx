@@ -40,23 +40,23 @@ const DefinitionList : React.FC<DefinitionListProps> = ({editable, title, conten
 
     return <dl className={styles.definitionList}>
         <dt className={styles.definitionListTitle}><div>{title}</div> 
-            {editable && <div className={styles.definitionListTitleIcon}>
+            {editable && <div className={`${styles.definitionListTitleIcon} color-grey hover-primary`}>
                 <Svg 
                 svgRef={editMode ? "close" : "edit"}
-                colorRef={{default: "grey", hover: "primary"}}
                 onClick={() => {
                     if(editMode) {
                         onCancel();
                     }
                     setEditMode(!editMode);
                 }} /></div>} 
-            {editMode && <div className={styles.definitionListTitleIcon}><Svg svgRef={"check"}
-                colorRef={{default: "grey", hover: "primary"}}
-                onClick={() => {
-                    if(editMode && onSave && ddItems) {
-                        onSave(ddItems);
-                    }
-                    setEditMode(!editMode);
+            {editMode && <div className={`${styles.definitionListTitleIcon} color-grey hover-primary`}>
+                <Svg
+                    svgRef={"check"}
+                    onClick={() => {
+                        if(editMode && onSave && ddItems) {
+                            onSave(ddItems);
+                        }
+                        setEditMode(!editMode);
                 }}/></div>}</dt>
         <dd className={styles.definitionListContent}>{
             ddItems?.map((ddItem, i) => editMode ? (canDelete ? <Deletable onClick={(e) => onDelete(i)} >

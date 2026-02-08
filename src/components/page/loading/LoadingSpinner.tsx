@@ -6,8 +6,8 @@ import styles from './LoadingSpinner.module.css';
 
 const LoadingSpinner : React.FC<LoadingSpinnerProps> = ({progress, text}) => {
     return <div className={styles.loadingSpinnerWrapper}>
-            <div className={styles.loadingSpinner}>
-                <Svg svgRef="bunnyUiLogo" colorRef={{default: 'primary', hover: 'primary'}} />
+            <div className={`${styles.loadingSpinner} color-primary hover-primary`}>
+                <Svg svgRef="bunnyUiLogo" />
             </div>
             {progress && <div className={styles.progressBar}>
                 <div className={styles.progressBarProgress} style={{width: `${progress??0}%`}} />

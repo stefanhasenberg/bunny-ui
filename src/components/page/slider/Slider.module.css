@@ -1,0 +1,25 @@
+.slider {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1em;
+}
+
+.sliderItems {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1em;
+    overflow-y: hidden;
+    position: relative;
+    padding: 1em 0;
+}
+
+.sliderButton {
+    cursor: pointer;
+}
+
+.disabled, .disabled *, .disabled div:hover {
+    color: var(--colors-bw-scale-40);
+}

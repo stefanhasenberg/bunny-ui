@@ -14,8 +14,8 @@ const Popup : React.FC<PopupProps> = ({isOpen, children}) => {
         { open && <div className={`${styles.overlay}`} data-testid="popup-container">
             <div className={`${styles.overlayWindow}`}>
                 <div className={`${styles.overlayWindowContent}`}>
-                    <div className={`${styles.overlayWindowNav}`}>
-                        <Svg svgRef="close" colorRef={{default: "primary", hover: "primary-light"}} onClick={closeOverlay} />
+                    <div className={`${styles.overlayWindowNav} color-primary hover-primary-light`}>
+                        <Svg svgRef="close" onClick={closeOverlay} />
                     </div>
                     <div className={`${styles.overlayWindowContentWrapper}`}>
                         {children}

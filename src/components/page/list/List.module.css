@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+.listBorder {
+    border-bottom: 1px solid var(--colors-bw-scale-30);
+}
+
 .linkedList {
     font-family: var(--fonts-family);
     text-decoration: none;
@@ -19,11 +23,9 @@
 }
 
 .listItemContent {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    align-items: 'center';
-    margin: 10px;
+    align-items: center;
+    margin: 1em;
 }
 
 .listItemIcon svg {
