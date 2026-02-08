@@ -20,10 +20,9 @@ const EditableContent : React.FC<EditableContentProps> = ({name, title, text, ed
     return <>
         <dl className={styles.editable} >
                     <dt className={styles.editableTitle}>
-                        <div>{title}</div> <div className={styles.editableTitleIcon}>{editable
+                        <div>{title}</div> <div className={`${styles.editableTitleIcon} color-grey hover-primary`}>{editable
                             && <Svg
                                 svgRef={editMode ? "close" : "edit"}
-                                colorRef={{default: "grey", hover: "primary"}}
                                 onClick={() => setEditMode(!editMode)} />} </div>
                     </dt>
                     <dd className={styles.editableContent}>

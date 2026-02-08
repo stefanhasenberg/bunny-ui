@@ -3,13 +3,13 @@ import Svg from '../../images/svg/Svg';
 import { ListProps } from './List.types';
 import styles from './List.module.css';
 
-const List : React.FC<ListProps> = ({items, colorRef, borderColorRef}) => {
+const List : React.FC<ListProps> = ({items}) => {
     return <ul className={`${styles.list}`}>{items && items.map((item, _index) => <li
-            className={`${styles.listItem}`}
-            style={item?.border ? {borderBottom: `1px solid ${`color-${(item?.borderColorRef?.default??borderColorRef?.default)??'grey'}`}`} : {}}
-            {...item} >
-        {item.link ? <a className={`${styles.linkedList} ${`color-${(item?.colorRef?.default??colorRef?.default)??'primary'}`} ${`hover-${(item?.colorRef?.hover??colorRef?.hover)??'primary-light'}`}`} {...item.link}>
-            <div className={`${styles.listItemContent} ${`color-${(item?.colorRef?.default??colorRef?.default)??'primary'}`} ${`hover-${(item?.colorRef?.hover??colorRef?.hover)??'primar-light'}`}`}>
+            {...item}
+            className={`${styles.listItem} ${item?.border ? styles.listBorder : ''}`}
+        >
+        {item.link ? <a className={`${styles.linkedList} ${item?.className??''}`} {...item.link}>
+            <div className={`${styles.listItemContent} ${item?.className??''}`}>
                     {item.svg && <span className={`${styles.listItemIcon}`}>
                         <Svg {...item.svg} />
                     </span> }
@@ -17,7 +17,7 @@ const List : React.FC<ListProps> = ({items, colorRef, borderColorRef}) => {
                         {item.text}
                     </span>
             </div>
-        </a> : <div className={`${styles.listItemContent}`}>
+        </a> : <div className={`${styles.listItemContent} ${item?.className??''}`}>
                 {item.svg && <span className={`${styles.listItemIcon}`}>
                   <Svg {...item.svg} />
                 </span> }

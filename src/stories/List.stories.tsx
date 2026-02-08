@@ -21,13 +21,15 @@ export const ListDefault: Story = {
         svgRef: 'profile'
       },
       text: "List Item 1",
-      border: true
+      border: true,
+      className: 'color-primary'
     },{
       svg: {
         svgRef: 'profile'
       },
       text: "List Item 2",
-      border: true
+      border: true,
+      className: 'color-primary'
     },{
       svg: {
         svgRef: 'profile'
@@ -35,7 +37,8 @@ export const ListDefault: Story = {
       text: "List Item 3 with Link",
       link: {
         href: '#',
-        title: 'Linked Item'
+        title: 'Linked Item',
+        className: 'color-primary hover-primary'
       },
       border: true
     }]
@@ -53,22 +56,20 @@ export const ListDefault: Story = {
 
 export const ListAlternativeColourNoBorder: Story = {
   args: {
-    colorRef: {
-      default: 'secondary',
-      hover: 'secondary-light'
-    },
     items: [{
       svg: {
         svgRef: 'profile'
       },
       text: "List Item 1",
-      border: true
+      border: true,
+      className: 'color-secondary'
     },{
       svg: {
         svgRef: 'profile'
       },
       text: "List Item 2",
-      border: true
+      border: true,
+      className: 'color-secondary'
     },{
       svg: {
         svgRef: 'profile'
@@ -76,7 +77,8 @@ export const ListAlternativeColourNoBorder: Story = {
       text: "List Item 3 with Link",
       link: {
         href: '#',
-        title: 'Linked Item'
+        title: 'Linked Item',
+        className: 'color-secondary hover-secondary'
       },
       border: false
     }]

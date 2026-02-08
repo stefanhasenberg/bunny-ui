@@ -22,3 +22,5 @@ export {default as EditableText} from './text/EditableText';
 export {default as Text} from './text/Text';
 export {default as Tile} from './tile/Tile';
 export {default as PageStyle} from './styles/PageStyle';
+export {default as SectionHeader} from './section/SectionHeader';
+export {default as Slider} from './slider/Slider';

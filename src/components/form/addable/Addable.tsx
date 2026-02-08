@@ -7,8 +7,8 @@ const Addable : React.FC<AddableProps> = ({children, onClick}) => {
     return <>
         <div className={styles.addable}>
         <div className={styles.addableContent}>{children}</div>
-        <div className={styles.addableAction}>
-            <Svg svgRef="add" colorRef={{default: "grey", hover: "grey-light"}} onClick={onClick} />
+        <div className={`${styles.addableAction} color-grey hover-grey-light`}>
+            <Svg svgRef="add" onClick={onClick} />
         </div>
     </div></>
 }
