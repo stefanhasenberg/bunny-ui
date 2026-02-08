@@ -68,8 +68,22 @@ const svgs = [
         value: <svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M0 0h24v24H0V0z" fill="none" /><path fill="currentColor" d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z" /></svg>
     },
     {
+        name: "arrowRight",
+        value: <svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path fill="currentColor" d="M6.23 20.23 8 22l10-10L8 2 6.23 3.77 14.46 12z"></path>
+        </svg>
+    },
+    {
+        name: "arrowLeft",
+        value: <svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path fill="currentColor" d="M17.77 3.77 16 2 6 12l10 10 1.77-1.77L9.54 12z"></path>
+        </svg>
+    },
+    {
         name: "check",
-        value: <svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none" /><path fill="currentColor" d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z" /></svg>
+        value: <svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24">
+            <path d="M0 0h24v24H0z" fill="none"/>
+            <path fill="currentColor" d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z" /></svg>
     },
     {
         name: "checkboxUnchecked",
@@ -105,9 +119,9 @@ const svgs = [
     }
 ] as Array<SvgItem>;
 
-const Svg : React.FC<SvgProps> = ({svgRef, colorRef, onClick}) => {
+const Svg : React.FC<SvgProps> = ({svgRef, className, onClick}) => {
     return <div
-            className={`${styles.imageSvg} ${colorRef ? 'colored' : ''} color-${colorRef?.default??'primary'} ${colorRef?.hover ? `hover-${colorRef?.hover}` : ''}`}
+            className={`${styles.imageSvg} ${className??''}`}
             onClick={onClick}
             >{
             svgs.find(svg => svg.name === svgRef)?.value

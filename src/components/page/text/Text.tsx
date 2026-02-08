@@ -44,7 +44,7 @@ const Text : React.FC<TextProps> = ({type, content, link}) => {
     }
 
     return <>
-        {link ? <a className={`${styles.text} color-${link?.colorRef?.default??'primary-light'} hover-${link?.colorRef?.hover??'primary-light'}`} {...link}>{text}</a> : text}
+        {link ? <a className={`${styles.text} ${link?.className??''}`} {...link}>{text}</a> : text}
         </>;
 }
 
