@@ -1,6 +1,6 @@
 {
   "name": "@stefanhasenberg/bunny-ui",
-  "version": "0.7.4",
+  "version": "0.7.5",
   "description": "UI component library",
   "files": [
     "dist"
@@ -12,6 +12,27 @@
     "type": "git",
     "url": "https://github.com/stefanhasenberg/bunny-ui.git",
     "directory": "dist"
+  },
+  "exports": {
+    "./page": {
+      "types": "./dist/page.d.ts",
+      "import": "./dist/bunny-ui.es.js",
+      "require": "./dist/bunny-ui.es.js"
+    },
+    "./images": {
+      "types": "./dist/images.d.ts",
+      "import": "./dist/bunny-ui2.es.js",
+      "require": "./dist/bunny-ui2.es.js"
+    },
+    "./form": {
+      "types": "./dist/form.d.ts",
+      "import": "./dist/bunny-ui3.es.js",
+      "require": "./dist/bunny-ui3.es.js"
+    },
+    "./bunny-ui.css": {
+      "import": "./dist/bunny-ui.css",
+      "require": "./dist/bunny-ui.css"
+    }
   },
   "engines": {
     "npm": ">=9.0.0",
