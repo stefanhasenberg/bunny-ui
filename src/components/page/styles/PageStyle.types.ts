@@ -1,5 +1,5 @@
 
 export type PageStyleProps = {
     children?: React.ReactNode;
-    theme?: 'nature' | 'pinklemonade';
+    theme?: 'nature' | 'pinklemonade' | 'nazgul';
 }
