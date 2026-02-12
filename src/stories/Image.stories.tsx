@@ -1,7 +1,7 @@
 import * as React from 'react';
 
 import { Meta, StoryObj } from '@storybook/react-vite';
-import './main.css';
+
 
 import Image from '../components/images/image/Image';
 import { expect, within } from 'storybook/test';

@@ -1,7 +1,7 @@
 import * as React from 'react';
 
 import { Meta, StoryObj } from '@storybook/react-vite';
-import './main.css';
+
 
 import ToastNotificationWrapper from '../components/page/notification/ToastNotificationWrapper';
 import ToastNotification from '../components/page/notification/ToastNotification';

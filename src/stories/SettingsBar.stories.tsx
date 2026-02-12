@@ -1,7 +1,7 @@
 import * as React from 'react';
 
 import { Meta, StoryObj } from '@storybook/react-vite';
-import './main.css';
+
 
 import SettingsBar from '../components/page/settings/SettingsBar';
 import { expect, within } from 'storybook/test';

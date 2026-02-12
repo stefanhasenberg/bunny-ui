@@ -1,7 +1,7 @@
 import * as React from 'react';
 
 import { Meta, StoryObj } from '@storybook/react-vite';
-import './main.css';
+
 
 import SimpleList from '../components/page/list/SimpleList';
 import SingleDefinitionItem from '../components/page/list/SingleDefinitionItem';
