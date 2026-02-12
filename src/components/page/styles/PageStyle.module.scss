@@ -142,6 +142,26 @@
     --forms-input-radius: 10px;
 }
 
+@font-face {
+    font-family: "Cinzel";
+    src: url("./fonts/Cinzel-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Open Sans";
+    src: url("./fonts/OpenSans-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Caviar Dreams";
+    src: url("./fonts/CaviarDreams.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Allura";
+    src: url("./fonts/Allura-Regular.ttf") format("truetype");
+}
+
 body {
     background-color: var(--colors-background);
 }

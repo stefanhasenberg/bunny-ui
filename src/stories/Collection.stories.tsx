@@ -1,6 +1,6 @@
 import * as React from 'react';
 import {  Meta, StoryObj } from '@storybook/react-vite';
-import './main.css';
+
 
 import Collection from '../components/page/collection/Collection';
 import Tile from '../components/page/tile/Tile';
