@@ -162,7 +162,11 @@
     src: url("./fonts/Allura-Regular.ttf") format("truetype");
 }
 
-body {
+.pageStyle {
+    background-color: var(--colors-background);
+}
+
+:global(body) {
     background-color: var(--colors-background);
 }
 
