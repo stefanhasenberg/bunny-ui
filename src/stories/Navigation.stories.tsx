@@ -1,7 +1,7 @@
 import * as React from 'react';
 
 import { Meta, StoryObj } from '@storybook/react-vite';
-import './main.css';
+
 
 import Navigation from '../components/page/navigation/Navigation';
 import { NavigationItemProps } from '../components/page/navigation/NavigationItem.types';

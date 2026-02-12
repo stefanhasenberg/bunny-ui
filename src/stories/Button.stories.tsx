@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { Meta, StoryObj } from '@storybook/react-vite';
-import './main.css';
+
 
 import Button from '../components/form/button/Button';
 

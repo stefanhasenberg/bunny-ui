@@ -5,34 +5,36 @@ import { resolve } from 'node:path';
 import { defineConfig } from 'vite';
 import dts from 'vite-plugin-dts';
 import { peerDependencies } from './package.json';
-import cssInjectedByJsPlugin from "vite-plugin-css-injected-by-js";
 
 // More info at: https://storybook.js.org/docs/next/writing-tests/integrations/vitest-addon
 const isStorybook = process.env.STORYBOOK_ENV?.trim() === 'storybook';
 
 export default defineConfig({
   optimizeDeps: {
-    include: ["react", "react-dom", "react/jsx-runtime", "**/*.scss, **/*.css"]
+    include: ["react", "react-dom", "react/jsx-runtime", "**/*.scss, **/*.css", "**/*.ttf"]
   },
   css: {
     modules: {
-      localsConvention: 'camelCaseOnly',
+      exportGlobals: true,
     },
   },
-  plugins: [react({
+  plugins: [
+    react({
       jsxRuntime: 'automatic',
-    }), babel(), dts({
-    insertTypesEntry: true,
-    rollupTypes: true,
-    tsconfigPath: resolve(__dirname, 'tsconfig.json')
-  }),
-  cssInjectedByJsPlugin()],
+    }),
+    babel(),
+    dts({
+      insertTypesEntry: true,
+      rollupTypes: true,
+      tsconfigPath: resolve(__dirname, 'tsconfig.json')
+    })
+  ],
   build: {
     lib: {
       entry: {
         page: resolve(__dirname, 'src/components/page/index.ts'),
         images: resolve(__dirname, 'src/components/images/index.ts'),
-        form: resolve(__dirname, 'src/components/form/index.ts'),
+        form: resolve(__dirname, 'src/components/form/index.ts')
       },
       name: 'BunnyUI',
       formats: ['es'],

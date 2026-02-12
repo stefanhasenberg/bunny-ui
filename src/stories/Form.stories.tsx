@@ -1,7 +1,7 @@
 import * as React from 'react';
 
 import { Meta, StoryObj } from '@storybook/react-vite';
-import './main.css';
+
 
 import  Form  from '../components/form/form/Form';
 import Input from '../components/form/input/Input';
