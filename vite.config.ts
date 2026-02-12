@@ -5,13 +5,19 @@ import { resolve } from 'node:path';
 import { defineConfig } from 'vite';
 import dts from 'vite-plugin-dts';
 import { peerDependencies } from './package.json';
+import cssInjectedByJsPlugin from "vite-plugin-css-injected-by-js";
 
 // More info at: https://storybook.js.org/docs/next/writing-tests/integrations/vitest-addon
 const isStorybook = process.env.STORYBOOK_ENV?.trim() === 'storybook';
 
 export default defineConfig({
   optimizeDeps: {
-    include: ["react", "react-dom", "react/jsx-runtime"]
+    include: ["react", "react-dom", "react/jsx-runtime", "**/*.scss, **/*.css"]
+  },
+  css: {
+    modules: {
+      localsConvention: 'camelCaseOnly',
+    },
   },
   plugins: [react({
       jsxRuntime: 'automatic',
@@ -19,7 +25,8 @@ export default defineConfig({
     insertTypesEntry: true,
     rollupTypes: true,
     tsconfigPath: resolve(__dirname, 'tsconfig.json')
-  })],
+  }),
+  cssInjectedByJsPlugin()],
   build: {
     lib: {
       entry: {
