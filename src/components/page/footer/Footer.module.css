@@ -1,0 +1,4 @@
+.footer {
+    background-color: var(--colors-secondary-light-background);
+    color: var(--colors-text-inverted);
+}
