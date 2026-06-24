@@ -1,3 +1,7 @@
+.text {
+
+}
+
 p {
     font-family: var(--fonts-family);
     margin: 0;
@@ -90,4 +94,16 @@ a {
 
 a:hover {
     text-decoration: underline;
+}
+
+p.inverted, p.small.inverted, p.quote.inverted, b.inverted, span.inverted, a.inverted, h1.inverted, h4.inverted, h5.inverted, h6.inverted {
+    color: var(--colors-text-inverted);
+}
+
+h2.inverted {
+    color: var(--colors-primary-inverted);
+}
+
+h3.inverted {
+    color: var(--colors-primary-inverted);
 }

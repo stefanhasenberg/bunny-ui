@@ -1,0 +1,14 @@
+.alignBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1em;
+}
+
+.alignBox.center {
+    justify-content: center;
+}
+
+.alignBox.right {
+    justify-content: flex-end;
+}
