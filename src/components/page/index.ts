@@ -55,4 +55,4 @@ export {default as SectionHeaderCSS} from './section/SectionHeader.module.css';
 export {default as SliderCSS} from './slider/Slider.module.css';
 export {default as ArticleCSS} from './article/Article.module.css';
 export {default as FooterCSS} from './footer/Footer.module.css';
-export {default as AlignBoxCSS} from './align/AlignBox.module.css';
+export {default as AlignBoxCSS} from './box/AlignBox.module.css';
