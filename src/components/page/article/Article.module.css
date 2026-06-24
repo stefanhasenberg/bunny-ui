@@ -1,0 +1,31 @@
+.article.article-text-small p,
+.article.article-text-small h1,
+.article.article-text-small h2,
+.article.article-text-small h3,
+.article.article-text-small h4,
+.article.article-text-small h5,
+.article.article-text-small h6
+{
+    margin-bottom: var(--page-spaces-small);
+}
+
+.article.article-text-medium p,
+.article.article-text-medium h1,
+.article.article-text-medium h2,
+.article.article-text-medium h3,
+.article.article-text-medium h4,
+.article.article-text-medium h5,
+.article.article-text-medium h6
+{
+    margin-bottom: var(--page-spaces-medium);
+}
+
+.article.article-text-large p,
+.article.article-text-large h1,
+.article.article-text-large h2,
+.article.article-text-large h3,
+.article.article-text-large h4,
+.article.article-text-large h5,
+.article.article-text-large h6 {
+    margin-bottom: var(--page-spaces-large);
+}

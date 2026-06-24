@@ -9,6 +9,8 @@
     --colors-primary-darker: #470701;
     --colors-primary-light: #D77771;
     --colors-primary-text: #fff;
+    --colors-text-inverted: #212121;
+    --colors-primary-inverted: #670701;
     --colors-secondary: #989E8B;
     --colors-secondary-dark: #686E5B;
     --colors-secondary-light: #B8BEAB;
@@ -57,6 +59,8 @@
     --colors-primary-darker: #662C38;
     --colors-primary-light: #ECB1B1;
     --colors-primary-text: #313131;
+    --colors-text-inverted: #99606D;
+    --colors-primary-inverted: #99606D;
     --colors-secondary: #7397B1;
     --colors-secondary-dark: #557C99;
     --colors-secondary-light: #85A4BB;
@@ -97,7 +101,7 @@
 *[data-theme='nazgul'] {
     --fonts-family: 'Open Sans', sans-serif;
     --fonts-family-headlines: 'Caviar Dreams', sans-serif;
-    --fonts-default-weight: 200;
+    --fonts-default-weight: 100;
     --fonts-family-quotes: Allura;
     --colors-background: #313131;
     --colors-primary: #EFEFEF;
@@ -105,6 +109,8 @@
     --colors-primary-darker: #CFCFCF;
     --colors-primary-light: #FFFFFF;
     --colors-primary-text: #313131;
+    --colors-text-inverted: #212121;
+    --colors-primary-inverted: #464646;
     --colors-secondary: #BFBFBF;
     --colors-secondary-dark: #AFAFAF;
     --colors-secondary-light: #CFCFCF;

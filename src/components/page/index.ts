@@ -24,6 +24,9 @@ export {default as Tile} from './tile/Tile';
 export {default as PageStyle} from './styles/PageStyle';
 export {default as SectionHeader} from './section/SectionHeader';
 export {default as Slider} from './slider/Slider';
+export {default as Article} from './article/Article';
+export {default as Footer} from './footer/Footer';
+export {default as AlignBox} from './box/AlignBox';
 
 export {default as CollectionCSS} from './collection/Collection.module.css';
 export {default as GridCSS} from './grid/Grid.module.css';
@@ -50,3 +53,6 @@ export {default as TileCSS} from './tile/Tile.module.scss';
 export {default as PageStyleCSS} from './styles/PageStyle.module.scss';
 export {default as SectionHeaderCSS} from './section/SectionHeader.module.css';
 export {default as SliderCSS} from './slider/Slider.module.css';
+export {default as ArticleCSS} from './article/Article.module.css';
+export {default as FooterCSS} from './footer/Footer.module.css';
+export {default as AlignBoxCSS} from './box/AlignBox.module.css';
