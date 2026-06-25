@@ -1,3 +1,4 @@
+import * as React from 'react';
 import {AlignBoxProps} from "./AlignBox.types";
 import styles from './AlignBox.module.css';
 
