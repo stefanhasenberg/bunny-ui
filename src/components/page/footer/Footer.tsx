@@ -1,3 +1,4 @@
+import * as React from 'react';
 import {FooterProps} from "./Footer.types";
 import styles from './Footer.module.css';
 
