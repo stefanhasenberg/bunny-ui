@@ -1,3 +1,4 @@
+import * as React from 'react';
 import {ArticleProps} from "./Article.types";
 import styles from './Article.module.css';
 
