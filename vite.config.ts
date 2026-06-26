@@ -2,7 +2,7 @@
 import react from '@vitejs/plugin-react';
 import babel from 'vite-plugin-babel';
 import { resolve } from 'node:path';
-import { defineConfig } from 'vite';
+import {defineConfig, esmExternalRequirePlugin} from 'vite';
 import dts from 'vite-plugin-dts';
 import { peerDependencies } from './package.json';
 
@@ -40,8 +40,12 @@ export default defineConfig({
       formats: ['es'],
       fileName: format => `bunny-ui.${format}.js`
     },
-    rollupOptions: {
-      external: !isStorybook ? ['react', 'react-dom', ...Object.keys(peerDependencies)] : [],
+    rolldownOptions: {
+      plugins: [
+        esmExternalRequirePlugin({
+          external: !isStorybook ? ['react', 'react-dom', ...Object.keys(peerDependencies)] : [],
+        })
+      ],
       output: {
         globals: {
           react: 'React',
